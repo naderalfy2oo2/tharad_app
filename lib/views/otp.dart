@@ -55,13 +55,10 @@ class OtpVerificationView extends StatelessWidget {
                 showDialog(
                   context: context,
                   builder: (context) {
-                    return AlertDialog(
-                      // title: Text("Verification Code"),
-                      // content: Text('Code entered is $verificationCode'),
-                    );
+                    return AlertDialog();
                   },
                 );
-              }, // end onSubmit
+              },
             ),
 
             Row(
@@ -78,24 +75,6 @@ class OtpVerificationView extends StatelessWidget {
 
                 SizedBox(width: 141),
 
-                // Align(
-                //   alignment: Alignment.centerRight,
-                //   child: Text.rich(
-                //     TextSpan(
-                //       children: [
-                //         TextSpan(
-                //           text: 'لم يصلك رمز ؟',
-                //           style: TextStyle(color: Color(0xff0D1D1E)),
-                //         ),
-
-                //         TextSpan(
-                //           text: 'اعادة الارسال ',
-                //           style: TextStyle(color: Color(0xff42867B)),
-                //         ),
-                //       ],
-                //     ),
-                //   ),
-                // ),
                 Align(
                   alignment: Alignment.centerRight,
                   child: Text.rich(

@@ -17,7 +17,6 @@ class _RegisterViewState extends State<RegisterView> {
 
   final ImagePicker _picker = ImagePicker();
 
-  // 2. وظيفة اختيار الصورة
   Future<void> _pickImage() async {
     final XFile? pickedFile = await _picker.pickImage(
       source: ImageSource.gallery,
@@ -60,47 +59,6 @@ class _RegisterViewState extends State<RegisterView> {
               ),
               SizedBox(height: 6),
 
-              // GestureDetector(
-              //    onTap: _pickImage,
-              //   child: Container(
-              //     height: 120,
-              //     width: 350,
-              //     decoration: BoxDecoration(
-              //       borderRadius: BorderRadius.circular(20),
-              //     ),
-              //     child: DottedBorder(
-              //       options: RectDottedBorderOptions(
-              //         color: Color(0xff42867B),
-              //         dashPattern: [10, 5],
-              //         strokeWidth: 2,
-              //         padding: EdgeInsets.all(16),
-              //       ),
-
-              //       child: Center(
-              //         child: Column(
-              //           children: [
-              //             SizedBox(
-              //               width: 24,
-              //               height: 24,
-              //               child: SvgPicture.asset('assets/icons/camera.svg'),
-              //             ),
-              //             Text.rich(
-              //               TextSpan(
-              //                 children: [
-              //                   TextSpan(
-              //                     text:
-              //                         'الملفات المسموح بيها :  JPEG , PNG\nالحد الاقصي : 5MB',
-              //                     style: TextStyle(color: Color(0xff998C8C)),
-              //                   ),
-              //                 ],
-              //               ),
-              //             ),
-              //           ],
-              //         ),
-              //       ),
-              //     ),
-              //   ),
-              // ),
               GestureDetector(
                 onTap: _pickImage,
                 child: Container(
@@ -230,22 +188,6 @@ class _RegisterViewState extends State<RegisterView> {
                 ),
               ),
 
-              // child: ElevatedButton(
-              //   style: ElevatedButton.styleFrom(
-
-              //     disabledBackgroundColor: Color(0xff5CC7A3),
-              //     shape: RoundedRectangleBorder(
-              //       borderRadius: BorderRadiusGeometry.circular(10),
-              //     ),
-              //   ),
-
-              //   onPressed: () {},
-
-              //   child: Text(
-              //     'إنشاء حساب جديد',
-              //     style: TextStyle(color: Colors.white),
-              //   ),
-              // ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
